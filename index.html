@@ -3,6 +3,77 @@
   <head>
     <meta charset="utf-8">
     <title>Wiki main</title>
+    <style media="screen">
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      header{
+        height: 25%;
+        width: 100%;
+      }
+      main{
+        height: 70%;
+        width: 80%;
+        margin: 0 auto;
+      }
+      #refrigerator{
+        display: flex;
+        flex-direction: column;
+        border: 3px dotted darkgray;
+        padding: 10px;
+      }
+      #upper{
+        display: flex;
+        flex-direction: row;
+        border: 5px solid red;
+        padding: 5px;
+      }
+      #down{
+        display: flex;
+        flex-direction: row;
+        border: 5px solid blue;
+        padding: 5px;
+      }
+      .ref_body{
+        background-color: yellowgreen;
+        height: 100%;
+        width: 30%;
+      }
+      .left_wing{
+        background-color: rgb(108, 249, 107);
+        height: 100%;
+        width: 25%;
+      }
+      .right_wing{
+        background-color: rgb(108, 249, 107);
+        height: 100%;
+        width: 25%;
+      }
+      .rw_outside{
+        background-color: green;
+        height: 100%;
+        width: 20%;
+      }
+      .left_leg{
+        background-color: purple;
+        height: 100%;
+        width: 50%;
+      }
+      .right_leg{
+        background-color: skyblue;
+        height: 100%;
+        width: 50%;
+      }
+      footer{
+        background-color: lightblue;
+        height: 10%;
+        width: 100%;
+      }
+    </style>
   </head>
 
   <body>
@@ -24,43 +95,44 @@
 
     <main>
       <!-- TOP layout -->
-      <div class="refrigerator">
-        <div class="body">
-          <p>김치</p>
-          <p>콩자반</p>
-          <p>불고기</p>
-          <p>젓갈</p>
-        </div>
-
-        <div class="left_wing">
-          <p>간장</p>
-          <p>고추장</p>
-          <p>마요네즈</p>
-        </div>
-
-        <div class="right_wing">
-          <p>물</p>
-          <p>음료</p>
+      <div id="refrigerator">
+        <div id="upper">
+          <div class="left_wing">
+            <p>간장</p>
+            <p>고추장</p>
+            <p>마요네즈</p>
+          </div>
+          <div class="ref_body">
+            <p>김치</p>
+            <p>콩자반</p>
+            <p>불고기</p>
+            <p>젓갈</p>
+          </div>
+          <div class="right_wing">
+            <p>물</p>
+            <p>음료</p>
+          </div>
           <div class="rw_outside">
             <p>콜라</p>
             <p>맥주</p>
           </div>
         </div>
 
-        <div class="left_leg">
-          <p>얼음</p>
-        </div>
+        <div id="down">
+          <div class="left_leg">
+            <p>얼음</p>
+          </div>
 
-        <div class="right_leg">
-          <p>냉동만두</p>
+          <div class="right_leg">
+            <p>냉동만두</p>
+          </div>
         </div>
-
       </div>
     </main>
-    <br>
+
     <footer>
-      ----
-      하단
+      ----<br>
+      하단<br>
       ----
     </footer>
   </body>
