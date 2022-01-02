@@ -12,7 +12,7 @@
         padding: 0;
       }
       header{
-        height: 25%;
+        height: 220px;
         background-color: rgba(184, 223, 252, 0.5);
       }
       #wiki_Title{
@@ -29,60 +29,60 @@
         display: flex;
         flex-direction: column;
         border: 3px dotted darkgray;
+        height: 800px;
+        width: 600px;
+        margin: 0 auto;
         padding: 10px;
       }
       #upper{
         display: flex;
         flex-direction: row;
-        border: 5px solid red;
-        padding: 5px;
+        height: 390px;
+        width: 580px;
       }
       #down{
         display: flex;
         flex-direction: row;
-        border: 5px solid blue;
-        padding: 5px;
+        height: 390px;
+        width: 580px;
       }
-      .ref_body{
-        background-color: yellowgreen;
-        box-sizing: border-box;
-        height: 100%;
-        width: 30%;
+      .body{
+        display: flex;
+        flex-direction: column;
+        background-color: lightgray;
+        border: 1px solid black;
+        width: 145px;
+        align-items: center;
+        justify-content: center;
       }
-      .left_wing{
-        background-color: rgb(108, 249, 107);
-        box-sizing: border-box;
-        height: 100%;
-        width: 25%;
+      .wing{
+        display: flex;
+        flex-direction: column;
+        background-color: lightgreen;
+        border: 1px solid black;
+        width: 145px;
+        align-items: center;
+        justify-content: space-between;
       }
-      .right_wing{
-        background-color: rgb(108, 249, 107);
-        box-sizing: border-box;
-        height: 100%;
-        width: 25%;
+      .wing.blank1{
+        background-color: white;
+        height: 78px;
       }
-      .rw_outside{
-        background-color: green;
-        box-sizing: border-box;
-        height: 100%;
-        width: 20%;
+      .wing.blank2{
+        background-color: white;
+        height: 78px;
+        width: 72.5px;
       }
-      .left_leg{
-        background-color: purple;
-        box-sizing: border-box;
-        height: 100%;
-        width: 50%;
+      .wing.right_wing{
+        width: 72.5px;
       }
-      .right_leg{
-        background-color: skyblue;
-        box-sizing: border-box;
-        height: 100%;
-        width: 50%;
+      .wing.rw_outside{
+        background-color: lightblue;
+        width: 72.5px;
       }
       footer{
-        background-color: lightblue;
-        height: 10%;¡™£
-        width: 100%;
+        background-color: rgba(152, 186, 217, 0.5);
+        height: 100px;
       }
     </style>
   </head>
@@ -107,37 +107,58 @@
     </header>
 
     <main>
-      <!-- TOP layout -->
+      <!-- Refrigerator Container -->
       <div id="refrigerator">
         <div id="upper">
-          <div class="left_wing">
+          <div class="wing left_wing">
+            <div class="wing blank1"></div>
             <p>간장</p>
             <p>고추장</p>
             <p>마요네즈</p>
+            <div class="wing blank1"></div>
           </div>
-          <div class="ref_body">
+          <div class="body left_body">
             <p>김치</p>
             <p>콩자반</p>
             <p>불고기</p>
             <p>젓갈</p>
           </div>
-          <div class="right_wing">
+          <div class="body right_body">
+            <p>콩나물무침</p>
+            <p>육개장</p>
+            <p>볶음김치</p>
+            <p>오이지</p>
+          </div>
+          <div class="wing right_wing">
+            <div class="wing blank2"></div>
             <p>물</p>
             <p>음료</p>
+            <div class="wing blank2"></div>
           </div>
-          <div class="rw_outside">
+          <div class="wing rw_outside">
+            <div class="wing blank2"></div>
             <p>콜라</p>
             <p>맥주</p>
+            <div class="wing blank2"></div>
           </div>
         </div>
 
         <div id="down">
-          <div class="left_leg">
+          <div class="wing ll_outside">
+            <div class="wing blank1"></div>
             <p>얼음</p>
+            <div class="wing blank1"></div>
           </div>
-
-          <div class="right_leg">
+          <div class="body left_leg">
+            <p>닭발</p>
+          </div>
+          <div class="body right_leg">
+            <p>냉동피자</p>
+          </div>
+          <div class="wing rl_outside">
+            <div class="wing blank1"></div>
             <p>냉동만두</p>
+            <div class="wing blank1"></div>
           </div>
         </div>
       </div>
