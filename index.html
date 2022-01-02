@@ -13,12 +13,17 @@
       }
       header{
         height: 25%;
-        width: 100%;
+        background-color: rgba(184, 223, 252, 0.5);
+      }
+      #wiki_Title{
+        text-align: center;
+      }
+      #objectives{
+        padding-left: 10px;
       }
       main{
-        height: 70%;
-        width: 80%;
-        margin: 0 auto;
+        min-height: 600px;
+        background-color: rgba(200, 200, 200, 0.5);
       }
       #refrigerator{
         display: flex;
@@ -40,37 +45,43 @@
       }
       .ref_body{
         background-color: yellowgreen;
+        box-sizing: border-box;
         height: 100%;
         width: 30%;
       }
       .left_wing{
         background-color: rgb(108, 249, 107);
+        box-sizing: border-box;
         height: 100%;
         width: 25%;
       }
       .right_wing{
         background-color: rgb(108, 249, 107);
+        box-sizing: border-box;
         height: 100%;
         width: 25%;
       }
       .rw_outside{
         background-color: green;
+        box-sizing: border-box;
         height: 100%;
         width: 20%;
       }
       .left_leg{
         background-color: purple;
+        box-sizing: border-box;
         height: 100%;
         width: 50%;
       }
       .right_leg{
         background-color: skyblue;
+        box-sizing: border-box;
         height: 100%;
         width: 50%;
       }
       footer{
         background-color: lightblue;
-        height: 10%;
+        height: 10%;¡™£
         width: 100%;
       }
     </style>
@@ -79,18 +90,20 @@
   <body>
     <header>
       <!-- Title -->
-      <div id="wiki_Title" style="text-align:center">
+      <div id="wiki_Title">
         <h1>Refrigerator Wiki</h1>
       </div>
 
       <!-- Objectives -->
-      <h1>This is Refrigerator</h1>
-      <p><i>read the objectives</i></p>
-      <ol>
-        <li>make the refrigerator wiki pages</li>
-        <li>divide refrigerator options</li>
-        <li>link to option pages</li>
-      </ol>
+      <div id="objectives">
+        <h1>This is Refrigerator</h1>
+        <p><i>read the objectives</i></p>
+        <ol>
+          <li>make the refrigerator wiki pages</li>
+          <li>divide refrigerator options</li>
+          <li>link to option pages</li>
+        </ol>
+      </div>
     </header>
 
     <main>
