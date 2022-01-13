@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 220px;
+    background-color: rgba(184, 223, 252, 0.5);
+}
+#wiki_Title{
+    text-align: center;
+}
+#objectives{
+    padding-left: 10px;
+}
+.return_Home{
+    padding: 15px 20px;
+    text-align: right;
+    font-size: 20px;
+}
+
+main{
+    min-height: 600px;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+#refrigerator{
+    display: flex;
+    flex-direction: column;
+    border: 3px dotted darkgray;
+    height: 800px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+#upper{
+    display: flex;
+    flex-direction: row;
+    height: 390px;
+    width: 580px;
+}
+#down{
+    display: flex;
+    flex-direction: row;
+    height: 390px;
+    width: 580px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    border: 1px solid black;
+    width: 145px;
+    align-items: center;
+    justify-content: center;
+}
+.wing{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;
+    border: 1px solid black;
+    width: 145px;
+    align-items: center;
+    justify-content: space-between;
+}
+.wing.blank1{
+    background-color: white;
+    height: 78px;
+}
+.wing.blank2{
+    background-color: white;
+    height: 78px;
+    width: 73px;
+}
+.wing.right_wing{
+    width: 73px;
+}
+.wing.rw_outside{
+    background-color: lightblue;
+    width: 73px;
+}
+
+footer{
+    background-color: rgba(152, 186, 217, 0.5);
+    height: 100px;
+}

@@ -1,173 +1,92 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Wiki main</title>
-    <style media="screen">
-      *{
-        box-sizing: border-box;
-      }
-      body{
-        margin: 0;
-        padding: 0;
-      }
-      header{
-        height: 220px;
-        background-color: rgba(184, 223, 252, 0.5);
-      }
-      #wiki_Title{
-        text-align: center;
-      }
-      #objectives{
-        padding-left: 10px;
-      }
-      main{
-        min-height: 600px;
-        background-color: rgba(200, 200, 200, 0.5);
-      }
-      #refrigerator{
-        display: flex;
-        flex-direction: column;
-        border: 3px dotted darkgray;
-        height: 800px;
-        width: 600px;
-        margin: 0 auto;
-        padding: 10px;
-      }
-      #upper{
-        display: flex;
-        flex-direction: row;
-        height: 390px;
-        width: 580px;
-      }
-      #down{
-        display: flex;
-        flex-direction: row;
-        height: 390px;
-        width: 580px;
-      }
-      .body{
-        display: flex;
-        flex-direction: column;
-        background-color: lightgray;
-        border: 1px solid black;
-        width: 145px;
-        align-items: center;
-        justify-content: center;
-      }
-      .wing{
-        display: flex;
-        flex-direction: column;
-        background-color: lightgreen;
-        border: 1px solid black;
-        width: 145px;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .wing.blank1{
-        background-color: white;
-        height: 78px;
-      }
-      .wing.blank2{
-        background-color: white;
-        height: 78px;
-        width: 72.5px;
-      }
-      .wing.right_wing{
-        width: 72.5px;
-      }
-      .wing.rw_outside{
-        background-color: lightblue;
-        width: 72.5px;
-      }
-      footer{
-        background-color: rgba(152, 186, 217, 0.5);
-        height: 100px;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="layout.css">
+</head>
 
-  <body>
-    <header>
-      <!-- Title -->
-      <div id="wiki_Title">
+<body>
+<header>
+    <!-- Title -->
+    <div id="wiki_Title">
         <h1>Refrigerator Wiki</h1>
-      </div>
+    </div>
 
-      <!-- Objectives -->
-      <div id="objectives">
+    <!-- Objectives -->
+    <div id="objectives">
         <h1>This is Refrigerator</h1>
         <p><i>read the objectives</i></p>
         <ol>
-          <li>make the refrigerator wiki pages</li>
-          <li>divide refrigerator options</li>
-          <li>link to option pages</li>
+            <li>make the refrigerator wiki pages</li>
+            <li>divide refrigerator options</li>
+            <li>link to option pages</li>
         </ol>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-      <!-- Refrigerator Container -->
-      <div id="refrigerator">
+<main>
+    <!-- Refrigerator Container -->
+    <div id="refrigerator">
         <div id="upper">
-          <div class="wing left_wing">
-            <div class="wing blank1"></div>
-            <p>간장</p>
-            <p>고추장</p>
-            <p>마요네즈</p>
-            <div class="wing blank1"></div>
-          </div>
-          <div class="body left_body">
-            <p>김치</p>
-            <p>콩자반</p>
-            <p>불고기</p>
-            <p>젓갈</p>
-          </div>
-          <div class="body right_body">
-            <p>콩나물무침</p>
-            <p>육개장</p>
-            <p>볶음김치</p>
-            <p>오이지</p>
-          </div>
-          <div class="wing right_wing">
-            <div class="wing blank2"></div>
-            <p>물</p>
-            <p>음료</p>
-            <div class="wing blank2"></div>
-          </div>
-          <div class="wing rw_outside">
-            <div class="wing blank2"></div>
-            <p>콜라</p>
-            <p>맥주</p>
-            <div class="wing blank2"></div>
-          </div>
+            <div class="wing left_wing">
+                <div class="wing blank1"></div>
+                <p><a href="left_wing.html">간장</a></p>
+                <p>고추장</p>
+                <p>마요네즈</p>
+                <div class="wing blank1"></div>
+            </div>
+            <div class="body left_body">
+                <p>김치</p>
+                <p>콩자반</p>
+                <p>불고기</p>
+                <p>젓갈</p>
+            </div>
+            <div class="body right_body">
+                <p>콩나물무침</p>
+                <p>육개장</p>
+                <p>볶음김치</p>
+                <p>오이지</p>
+            </div>
+            <div class="wing right_wing">
+                <div class="wing blank2"></div>
+                <p>물</p>
+                <p>음료</p>
+                <div class="wing blank2"></div>
+            </div>
+            <div class="wing rw_outside">
+                <div class="wing blank2"></div>
+                <p>콜라</p>
+                <p>맥주</p>
+                <div class="wing blank2"></div>
+            </div>
         </div>
 
         <div id="down">
-          <div class="wing ll_outside">
-            <div class="wing blank1"></div>
-            <p>얼음</p>
-            <div class="wing blank1"></div>
-          </div>
-          <div class="body left_leg">
-            <p>닭발</p>
-          </div>
-          <div class="body right_leg">
-            <p>냉동피자</p>
-          </div>
-          <div class="wing rl_outside">
-            <div class="wing blank1"></div>
-            <p>냉동만두</p>
-            <div class="wing blank1"></div>
-          </div>
+            <div class="wing ll_outside">
+                <div class="wing blank1"></div>
+                <p>얼음</p>
+                <div class="wing blank1"></div>
+            </div>
+            <div class="body left_leg">
+                <p>닭발</p>
+            </div>
+            <div class="body right_leg">
+                <p>냉동피자</p>
+            </div>
+            <div class="wing rl_outside">
+                <div class="wing blank1"></div>
+                <p>냉동만두</p>
+                <div class="wing blank1"></div>
+            </div>
         </div>
-      </div>
-    </main>
+    </div>
+</main>
 
-    <footer>
-      ----<br>
-      하단<br>
-      ----
-    </footer>
-  </body>
+<footer>
+    ----<br>
+    하단<br>
+    ----
+</footer>
+</body>
 </html>
