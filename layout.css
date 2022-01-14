@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -74,12 +75,21 @@ main{
     height: 78px;
     width: 73px;
 }
+.wing.body{
+    height: 234px;
+}
 .wing.right_wing{
     width: 73px;
+}
+.wing.right_wing.body{
+    height: 234px;
 }
 .wing.rw_outside{
     background-color: lightblue;
     width: 73px;
+}
+.wing.rw_outside.body{
+    height: 234px;
 }
 
 footer{
